@@ -1,0 +1,111 @@
+/* NAVBAR */
+
+#navbar {
+    background: rgba(34, 28, 52, 1);
+}
+
+.nome-empresa {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* FORM */
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.form .back-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 70%;
+    padding: 3px 12px;
+    border-radius: 4px;
+}
+
+.form form {
+    width: 100%;
+}
+
+.input-btn {
+    display: flex;
+    align-items: center;
+}
+
+.input-btn button {
+    background: transparent;
+    border: none;
+    color: rgb(143, 143, 143);
+}
+
+.input-btn button:hover {
+    color: black;
+}
+
+
+.input-btn input {
+    background: transparent;
+    border: none;
+    width: 97%;
+}
+
+.input-btn input:focus-visible {
+    outline: none;
+}
+
+/* FORM */
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-account, .account .nav-link{
+    color: #fff;
+}
+
+.account a:hover{
+    color: rgb(176, 176, 176);
+}
+
+#navbar li{
+    display: inline;
+    list-style: none;
+    padding-left: 0;
+}
+
+.teste {
+    text-decoration: none;
+    color: #fff;
+}
+
+.teste:hover {
+    color: rgb(176, 176, 176);
+}
+/* NAVBAR */
+
+/* FOOTER */
+
+#footer {
+    background:  rgb(26, 22, 41);
+}
+
+#footer .col-md {
+    color: #fff;
+}
+
+#footer .text-decoration-none {
+    color: rgb(186, 186, 186);
+}
+
+#footer .text-decoration-none:hover {
+    color: #fff;
+}
+
+/* FOOTER */

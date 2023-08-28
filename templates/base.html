@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/navFooter.css' %}">
+    {% block style %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-md-2">
+                    <a class="nome-empresa" href="#">
+                        <p class="my-0">Mercadinho</p>
+                        <p class="my-0">Luiz</p>
+                    </a>
+                </div>
+                <div class="form col-md-8">
+                    <div class="container back-input">
+                        <form action="post">
+                            <div class="input-btn">
+                                <input type="text" placeholder="Buscar">
+                                <button type="reset">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2 account">
+                    <a class="icon-account" href="#">
+                        <i class="fa-solid fa-circle-user fa-2xl"></i>
+                    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conta</a></li>
+                            <li><a class="dropdown-item" href="#">Meu carrinho</a></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul>
+                        <div class="row">
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-8">
+                                <li class="mx-2">
+                                    <a class="teste" href="#">Ofertas do dia</a>
+                                </li>
+                                <li class="mx-2">
+                                    <a class="teste" href="#">Moda</a>
+                                </li>
+                                <li class="mx-2">
+                                    <a class="teste" href="#">Contato</a>
+                                </li>
+                                <li class="mx-2">
+                                    <a class="teste" href="#">Compras</a>
+                                </li>
+                                <li class="mx-2">
+                                    <a class="teste" href="#">Histórico</a>
+                                </li>
+                            </div>
+                            <div class="col-md-2">
+                                <li>
+                                    <a class="teste" href="#">Meu carrinho</a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+{% block content %}
+{% endblock %}
+
+<footer id="footer">
+    <div class="container py-md-4">
+        <div class="row">
+            <div class="col-12 col-md">
+                <small>Aula Cesmac © 2023.2</small>
+            </div>
+            <div class="col-md">
+                <h5>Conheça-nos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Informações corporativas</a></li>
+                    <li><a class="text-decoration-none" href="#">Comunicados a imprensa</a></li>
+                    <li><a class="text-decoration-none" href="#">Acessibilidade</a></li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h5>Pagamentos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Meios de pagamento</a></li>
+                    <li><a class="text-decoration-none" href="#">Crédito e Produtos de Pagamento</a></li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h5>Ajuda</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-decoration-none" href="#">Sua conta</a></li>
+                    <li><a class="text-decoration-none" href="#">Frete e prazo de entrega</a></li>
+                    <li><a class="text-decoration-none" href="#">Devoluções e reembolso</a></li>
+                    <li><a class="text-decoration-none" href="#">Ajuda</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,66 @@
+/* SECTION PRODUTOS */
+
+.produtos, .filtro {
+    background: rgb(51, 36, 95, 1);
+    border-radius: 12px;
+}
+
+
+/* DIV PRODUTO */
+
+.produtos-img-descricao {
+    border-radius: 18px;
+    background: #fff;
+    font-size: small;
+}
+
+.produtos-img-descricao:hover{
+    filter: brightness(85%);
+}
+
+.descricao {
+    text-decoration: none;
+    color: black;
+}
+
+.descricao:hover {
+    color: #FF8F0C;
+}
+
+
+.comprar {
+    transform: translateY(-50%);
+    margin: 0 -5%;
+    color: #fff;
+    background: #FF8F0C;
+    border-radius: 4px;
+    font-size: large;
+}
+
+
+
+.btn-comprar {
+    text-decoration: none;
+    font-weight: bold;
+}
+/* DIV PRODUTO */
+
+
+
+
+/* SECTION PRODUTOS */
+
+/* Filtro */
+
+.filtro {
+    color: #fff;
+}
+
+
+.accordion-header button {
+    background: transparent;
+    color: #fff;
+}
+
+
+/* Filtro */
