@@ -53,14 +53,56 @@
 /* Filtro */
 
 .filtro {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
-
-.accordion-header button {
+.item-acordeao button{
+    border-radius: 12px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     background: transparent;
+    border: none;
     color: #fff;
+    width: 100%;
 }
 
+.item-acordeao button:hover {
+    background: rgb(62, 44, 118);
+}
+
+.item-acordeao button div {
+    width: 90%;
+}
+
+.item-acordeao button i {
+    width: 10%;
+}
+
+/* SUB ITEM-FILTRO */
+
+.list-checkbox {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-checkbox li {
+    display: flex;
+    justify-content: center;
+}
+
+.list-checkbox-texto {
+    width: 90%;
+}
+
+.list-checkbox-input {
+    width: 10%;
+}
+
+.list-checkbox-input input {
+    border: none;
+    color: red;
+}
+/* SUB ITEM-FILTRO */
 
 /* Filtro */
