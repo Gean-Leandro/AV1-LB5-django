@@ -8,11 +8,11 @@
 {% block content %}
 <section>
     <div class="container-flex">
-        <div class="row my-2">
+        <div class="row">
             <h1 class="text-center">OFERTAS DO DIA</h1>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 mx-4">
                 <div class="filtro text-center py-3 px-3 mx-2">
                     <h3>Filtro</h3>
                     <hr>
@@ -192,13 +192,14 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="container produtos px-4 py-4 mb-5">
+                <div class="produtos mb-5">
                     <div class="row">
-                        <div class="col-md-3 produto">
+                        {% for produto in produtos %}  
+                        <div class="col-md-3 mt-4 produto">
                             <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
                                 <a href="#" class="btn-comprar">
                                     <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
+                                        R$ {{ produto.preco }} | <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
 
                                     <div class="row">
@@ -207,287 +208,12 @@
                                             alt="">
                                     </div>
                                     <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
+                                        {{ produto.nome }}
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 produto">
-                            <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="#" class="btn-comprar">
-                                    <div class="comprar py-1 text-center">
-                                        R$ 199,99 | <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-
-                                    <div class="row">
-                                        <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
-                                            alt="">
-                                    </div>
-                                    <div class="row px-2 text-center descricao">
-                                        Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
