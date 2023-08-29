@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import listar_produtos
+from app.views import listar_produtos, detalhar_produto
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('', listar_produtos),
+    path('produtos/<id:int>/', detalhar_produto)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

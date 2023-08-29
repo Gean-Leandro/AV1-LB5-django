@@ -56,3 +56,11 @@ def listar_produtos(request):
         'produtos': produtos
     }
     return render(request, 'index.html', context)
+
+def detalha_produto(request, id):
+    produto = produtos[id - 1]
+    context = {
+        'produto': produto 
+    }
+
+    return render(request, '', context)

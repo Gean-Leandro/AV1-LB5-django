@@ -193,7 +193,7 @@
             </div>
             <div class="col-md-8">
                 <div class="produtos mb-5">
-                    <div class="row">
+                    <div class="row px-4 pb-4">
                         {% for produto in produtos %}  
                         <div class="col-md-3 mt-4 produto">
                             <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
@@ -204,7 +204,7 @@
 
                                     <div class="row">
                                         <img class="w-90"
-                                            src="{% static 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg' %}"
+                                            src="/static/{{ produto.img }}"
                                             alt="">
                                     </div>
                                     <div class="row px-2 text-center descricao">
