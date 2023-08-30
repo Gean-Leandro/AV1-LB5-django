@@ -22,5 +22,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', listar_produtos),
-    path('produtos/<id:int>/', detalhar_produto)
+    path('produtos/<int:id>/', detalhar_produto, name="produto_detail")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

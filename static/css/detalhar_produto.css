@@ -1,0 +1,14 @@
+.bg {
+    background: #33245F;
+    border-radius: 12px;
+}
+
+.bg-produto {
+    background: white;
+    border-radius: 12px;
+}
+
+
+.preco-produto-detalhe p {
+    text-decoration: line-through;
+}

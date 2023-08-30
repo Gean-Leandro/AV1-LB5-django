@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/detalhar_produto.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-12 bg">
+            <div class="col-md-12 px-4 py-4 my-2 bg-produto">
+                <div class="row">
+                    <h4>{{ produto.nome }}</h4>
+                </div>
+                <div class="row">
+                    <div class="imgs-produtos col-md-5">
+                        imagems
+                    </div>
+                    <div class="preco-produto col-md-5">
+                        <div class="row preco-produto-detalhe">
+                            <p>{{ produto.precoAnterior }}</p>
+                            <h4>{{ produto.preco }}</h4>
+                        </div>
+                        <div class="row">
+                            Á vista no pix com até 15% OFF<br>
+                            {{ produto.pix }}<br>
+                            Em até {{ produto.maxVezes }}x de {{ produto.maxVezesPreco }} sem juruos no cartão
+                            Ou em 1x no cartão com até 10% OFF
+                        </div>
+                    </div>
+                    <div class="btn-comprar col-md-2">
+                        comprar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
