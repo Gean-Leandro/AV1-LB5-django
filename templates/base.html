@@ -9,7 +9,7 @@
     <title>E-commerce</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="{% static 'css/navFooter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navFooter1.css' %}">
     {% block style %}
     {% endblock %}
 </head>
@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row pt-4">
                 <div class="col-md-2">
-                    <a class="nome-empresa" href="#">
+                    <a class="nome-empresa" href="{% url 'listar_produtos' %}">
                         <p class="my-0">Mercadinho</p>
                         <p class="my-0">Luiz</p>
                     </a>
@@ -61,24 +61,24 @@
                             </div>
                             <div class="col-md-8">
                                 <li class="mx-2">
-                                    <a class="teste" href="#">Ofertas do dia</a>
+                                    <a class="nav-list" href="#">Ofertas do dia</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="teste" href="#">Moda</a>
+                                    <a class="nav-list" href="#">Moda</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="teste" href="#">Contato</a>
+                                    <a class="nav-list" href="#">Contato</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="teste" href="#">Compras</a>
+                                    <a class="nav-list" href="#">Compras</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="teste" href="#">Histórico</a>
+                                    <a class="nav-list" href="#">Histórico</a>
                                 </li>
                             </div>
                             <div class="col-md-2">
                                 <li>
-                                    <a class="teste" href="#">Meu carrinho</a>
+                                    <a class="nav-list" href="#">Meu carrinho</a>
                                 </li>
                             </div>
                         </div>

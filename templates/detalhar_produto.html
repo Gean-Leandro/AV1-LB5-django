@@ -10,31 +10,121 @@
     <div class="row">
         <div class="col-md-12 bg">
             <div class="col-md-12 px-4 py-4 my-2 bg-produto">
-                <div class="row">
-                    <h4>{{ produto.nome }}</h4>
-                </div>
-                <div class="row">
-                    <div class="imgs-produtos col-md-5">
-                        imagems
+                <section>
+                    <div class="row">
+                        <h4>{{ produto.nome }}</h4>
                     </div>
-                    <div class="preco-produto col-md-5">
-                        <div class="row preco-produto-detalhe">
-                            <p>{{ produto.precoAnterior }}</p>
-                            <h4>{{ produto.preco }}</h4>
+                    <div class="row">
+                        <div class="imgs-produtos col-md-5">
+                            <div id="caixa-imagem" class="">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            {% for img in imgs %}
+                                            <div class="box-miniatura my-2" onclick="trocaImg('{{ forloop.counter }}')">
+                                                <img id="img-{{ forloop.counter }}" class="w-100" src="/static/{{ img }}" alt="">
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="col-md-10 py-1 px-1">
+                                            <img id="imgPricipal" class="w-100" src="/static/{{ imgInicial }}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            Á vista no pix com até 15% OFF<br>
-                            {{ produto.pix }}<br>
-                            Em até {{ produto.maxVezes }}x de {{ produto.maxVezesPreco }} sem juruos no cartão
-                            Ou em 1x no cartão com até 10% OFF
+                        <div class="preco-produto col-md-4 pt-4">
+                            <div class="row preco-produto-detalhe">
+                                <p>{{ produto.precoAnterior }}</p>
+                                <h4>{{ produto.preco }}</h4>
+                            </div>
+                            <div class="row">
+                                Á vista no pix com até 15% OFF
+                            </div>
+                            <div class="row">
+                                <b class="px-0">R$ {{ produto.pix }}</b>
+                            </div>
+                            <div class="row">
+                                <div class="text-produto px-0">
+                                    Em até {{ produto.maxVezes }}x de
+                                    <b class="px-0">R$ {{ produto.maxVezesPreco }}</b> sem juruos no cartão
+                                    ou em 1x no cartão com até 10% OFF
+                                </div>
+                                <div class="text-estoque px-0 pt-5">
+                                    <b>Itens no estoque:</b>
+                                    <span class="text-warning">{{ produto.qtdEstoque }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <a class="col-md-8 comprar-text py-2" href="#">
+                                    <h4>COMPRAR</h1>
+                                </a>
+                                <a class="col-md-2 carrinho-img mx-2" href="#">
+                                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="btn-comprar col-md-2">
-                        comprar
-                    </div>
+
+                </section>
+                <div class="row my-5">
+                    <div class="col-md-12 linha"></div>
                 </div>
+                <section id="descricao">
+                    <div class="row mb-3">
+                        <h2 class="fw-bold">DESCRIÇÃO</h2>
+                    </div>
+                    <div class="row">
+                        <p class="fw-bold mt-2 mb-1">Caracteristicas:</p>
+                        {% for c in caracteristicas %}
+                        <p class="pl-5 mx-2 mb-0"> {{ c.caracteristica }}</p>
+                        {% endfor %}
+                        <p class="fw-bold mt-2 mb-1">Especificações:</p>
+                        {% for e in especificacoes %}
+                        <p class="pl-5 mx-2 mb-0"> {{ e.especificacoes }}</p>
+                        {% endfor %}
+                        <p class="fw-bold mt-2 mb-1">Conteúdo da Embalagem:</p>
+                        {% for c in conteudos %}
+                        <p class="pl-5 mx-2 mb-0"> {{ c.conteudo }}</p>
+                        {% endfor %}
+                        <p class="fw-bold mt-2 mb-1">Garantia:</p>
+                        {% for c in garantia %}
+                        <p class="pl-5 mx-2 mb-0"> {{ c.garantia }}</p>
+                        {% endfor %}
+                        <p class="fw-bold mt-2 mb-1">Peso:</p>
+                        {% for c in peso %}
+                        <p class="pl-5 mx-2 mb-0"> {{ c.peso }}</p>
+                        {% endfor %}
+                    </div>
+                </section>
+                <div class="row my-5">
+                    <div class="col-md-12 linha"></div>
+                </div>
+                <section id="avaliacoes">
+                    <div class="row mb-1">
+                        <h2 class="fw-bold">AVALIAÇÕES</h2>
+                    </div>
+                    <div class="row">
+                        {% for av in avaliacoes %}
+                        <div class="col-md-6 mt-3">
+                            <div class="avaliacoes-box px-4">
+                                <h6 class="text-center fw-bold mb-0 mt-1">{{ av.nome }}</h4>
+                                <h6 class="text-center">{{ av.data }}</h6>
+                                <b>{{ av.titulo }}</b>
+                                <p>{{ av.avaliacao }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
             </div>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/detalhar_produto.js' %}" ></script>
 {% endblock %}

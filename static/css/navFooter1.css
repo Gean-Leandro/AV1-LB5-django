@@ -80,12 +80,12 @@
     padding-left: 0;
 }
 
-.teste {
+.nav-list {
     text-decoration: none;
     color: #fff;
 }
 
-.teste:hover {
+.nav-list:hover {
     color: rgb(176, 176, 176);
 }
 /* NAVBAR */

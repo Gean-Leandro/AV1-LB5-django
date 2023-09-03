@@ -9,7 +9,8 @@ produtos = [
         'preco': '229,99',
         'pix': '270,58',
         'maxVezes': '10',
-        'maxVezesPreco': '27,05'
+        'maxVezesPreco': '27,05',
+        'qtdEstoque': '20'
     },
     {
         'id': 2,
@@ -19,7 +20,8 @@ produtos = [
         'preco': '89,99',
         'pix': '105,87',
         'maxVezes': '4',
-        'maxVezesPreco': '26,46'
+        'maxVezesPreco': '26,46',
+        'qtdEstoque': '60'
     }
 ]
 
@@ -46,48 +48,137 @@ imagens = [
     },
     {
         'id': 5,
-        'idProduto': 1,
-        'img': 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 5.jpg'
-    },
-    {
-        'id': 6,
         'idProduto': 2,
         'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 1.jpg'
     },
     {
-        'id': 7,
+        'id': 6,
         'idProduto': 2,
         'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 2.jpg'
     },
     {
-        'id': 8,
+        'id': 7,
         'idProduto': 2,
         'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 3.jpg'
     },
     {
-        'id': 9,
+        'id': 8,
         'idProduto': 2,
         'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 4.jpg'
     }
 ]
 
-descricoes = [
+caracteristicas = [
     {
         'id': 1,
         'idProduto': 1,
-        'caracteristica': '- Marca: HyperX<br>- Modelo: 4P5E1AA#ABA',
-        'especificacoes': '- Iluminação RGB dinâmica por tecla<br>- Estrutura durável em alumínio<br>- Descanso para pulso removível<br>- Switches mecânicos confiáveis à prova de poeira[2]<br>- Conector USB em metal dourado com cabo trançado resistente<br>- Personalização avançada com o software HyperX NGENUITY',
-        'conteudo da embalagem': '- Teclado HyperX Alloy MKW100',
-        'garantia': '24 meses de garantia',
+        'caracteristica': '- Marca: HyperX'
+    },
+    {
+        'id': 2,
+        'idProduto': 1,
+        'caracteristica': '- Modelo: 4P5E1AA#ABA'
+    },
+    {
+        'id': 3,
+        'idProduto': 2,
+        'caracteristica': '- Marca: Redragon',
+    },
+    {
+        'id': 4,
+        'idProduto': 2,
+        'caracteristica': '- Modelo: M711W',
+    }
+]
+
+especificacoes = [
+    {
+        'id': 1,
+        'idProduto': 1,
+        'especificacoes': '- Iluminação RGB dinâmica por tecla'
+    },
+    {
+        'id': 2,
+        'idProduto': 1,
+        'especificacoes': '- Estrutura durável em alumínio'
+    },
+    {
+        'id': 3,
+        'idProduto': 1,
+        'especificacoes': '- Descanso para pulso removível'
+    },
+    {
+        'id': 4,
+        'idProduto': 1,
+        'especificacoes': '- Switches mecânicos confiáveis à prova de poeira[2]'
+    },
+    {
+        'id': 5,
+        'idProduto': 1,
+        'especificacoes': '- Conector USB em metal dourado com cabo trançado resistente'
+    },
+    {
+        'id': 6,
+        'idProduto': 1,
+        'especificacoes': '- Personalização avançada com o software HyperX NGENUITY'
+    },
+    {
+        'id': 7,
+        'idProduto': 2,
+        'especificacoes': '- Exclusiva e linda pintura branca com acabamento Matte.'
+    },
+    {
+        'id': 8,
+        'idProduto': 2,
+        'especificacoes': '- Sensor PIXART PMW3325 para Alta Performance (10000DPI/20G/100ips)'
+    },
+    {
+        'id': 9,
+        'idProduto': 2,
+        'especificacoes': '- Iluminação RGB Ajustável'
+    },
+    {
+        'id': 10,
+        'idProduto': 2,
+        'especificacoes': '- Nova versão com sistema de Iluminação Chroma RGB! (7 Diferentes Modos de Iluminação)'
+    }
+]
+
+conteudos = [
+    {
+        'id': 1,
+        'idProduto': 1,
+        'conteudo': '- Teclado HyperX Alloy MKW100'
+    },
+    {
+        'id': 2,
+        'idProduto': 2,
+        'conteudo': '- Mouse Gamer Redragon Cobra'
+    }
+]
+
+garantias = [
+    {
+        'id': 1,
+        'idProduto': 1,
+        'garantia': '24 meses de garantia'
+    },
+    {
+        'id': 2,
+        'idProduto': 2,
+        'garantia': '12 meses de garantia'
+    }
+]
+
+pesos = [
+    {
+        'id': 1,
+        'idProduto': 1,
         'peso': '1250 gramas (bruto com embalagem)'
     },
     {
         'id': 2,
         'idProduto': 2,
-        'caracteristica': '- Marca: Redragon<br>- Modelo: M711W',
-        'especificacoes': '- Exclusiva e linda pintura branca com acabamento Matte.<br>- Sensor PIXART PMW3325 para Alta Performance (10000DPI/20G/100ips)<br>- Iluminação RGB Ajustável<br>- Nova versão com sistema de Iluminação Chroma RGB! (7 Diferentes Modos de Iluminação)',
-        'conteudo da embalagem': '- Mouse Gamer Redragon Cobra',
-        'garantia': '12 meses de garantia',
         'peso': '210 gramas (bruto com embalagem)'
     }
 ]
@@ -152,10 +243,32 @@ def detalhar_produto(request, id):
         if i['idProduto'] == id:
             imgs.append(i['img'])
 
-    for d in descricoes:
-        if d['idProduto'] == id:
-            descr = d
+    caracteristica = []
+    for c in caracteristicas:
+        if c['idProduto'] == id:
+            caracteristica.append(c)
+
+    especificacao = []
+    for c in especificacoes:
+        if c['idProduto'] == id:
+            especificacao.append(c)
+
+    conteudo = []
+    for c in conteudos:
+        if c['idProduto'] == id:
+            conteudo.append(c)
+
+    garantia = []
+    for c in garantias:
+        if c['idProduto'] == id:
+            garantia.append(c)
             break
+            
+    peso = []
+    for c in pesos:
+        if c['idProduto'] == id:
+            peso.append(c)
+
 
     av = []
     for a in avaliacoes:
@@ -166,7 +279,12 @@ def detalhar_produto(request, id):
     context = {
         'produto': produto,
         'imgs': imgs,
-        'descricao': descr,
+        'imgInicial': imgs[0],
+        'caracteristicas': caracteristica,
+        'especificacoes': especificacao,
+        'conteudos': conteudo,
+        'garantia': garantia,
+        'peso': peso,
         'avaliacoes': av
     }
 

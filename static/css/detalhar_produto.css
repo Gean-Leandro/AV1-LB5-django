@@ -8,7 +8,86 @@
     border-radius: 12px;
 }
 
-
+/* Detalhes do preço do produto */
 .preco-produto-detalhe p {
     text-decoration: line-through;
+    padding-left: 0;
+    margin-bottom: 0;
 }
+
+.preco-produto-detalhe h4 {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.text-produto, .text-estoque {
+    display: inline-block;
+}
+
+/* Detalhes do preço do produto */
+
+/* Imagens do produto */
+
+#caixa-imagem, .box-miniatura {
+    background: transparent;
+    border-radius: 9px;
+    border: #33245F solid 2px;
+}
+
+.box-miniatura img {
+    border-radius: 9px;
+}
+
+.box-miniatura:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+/* Imagens do produto */
+
+/* Botão compar */
+
+.comprar-text, .carrinho-img {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.comprar-text {
+    background: #33245F;
+    color: #fff;
+}
+
+.comprar-text:hover {
+    background: #473384;
+}
+
+.carrinho-img {
+    background: #7361A6;
+}
+
+.carrinho-img:hover {
+    background: #8f79cb;
+}
+/* Botão compar */
+
+/* Linha que separa a descrição */
+
+.linha {
+    border: #193F89 solid 2px;
+}
+
+/* Linha que separa a descrição */
+
+/* Avaliação  */
+
+.avaliacoes-box {
+    border: #818181 solid 2px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+/* Avaliação  */

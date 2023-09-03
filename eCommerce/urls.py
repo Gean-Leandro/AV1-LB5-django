@@ -21,6 +21,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', listar_produtos),
+    path('', listar_produtos, name="listar_produtos"),
     path('produtos/<int:id>/', detalhar_produto, name="produto_detail")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
