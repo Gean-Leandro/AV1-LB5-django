@@ -197,7 +197,7 @@
                         {% for produto in produtos %}  
                         <div class="col-md-3 mt-4 produto">
                             <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
-                                <a href="{% url 'produto_detail' produto.id %}" class="btn-comprar">
+                                <a href="{% url 'produtos:produto_detail' produto.id %}" class="btn-comprar">
                                     <div class="comprar py-1 text-center">
                                         R$ {{ produto.preco }} | <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
