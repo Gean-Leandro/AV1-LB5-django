@@ -30,11 +30,11 @@ def cadastrar(request):
 
 def loginUsuario(request):
     if request.method == 'POST':
-        nome = request.POST.get('nome')
+        email = request.POST.get('email')
         senha = request.POST.get('senha')
 
         usuario = authenticate(
-            username=nome,
+            username=email,
             password=senha
         )
 

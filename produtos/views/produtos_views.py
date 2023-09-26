@@ -22,6 +22,72 @@ produtos = [
         'maxVezes': '4',
         'maxVezesPreco': '26,46',
         'qtdEstoque': '60'
+    },
+    {
+        'id': 1,
+        'nome': 'Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...',
+        'img': 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg',
+        'precoAnterior': '376,46',
+        'preco': '229,99',
+        'pix': '270,58',
+        'maxVezes': '10',
+        'maxVezesPreco': '27,05',
+        'qtdEstoque': '20'
+    },
+    {
+        'id': 2,
+        'nome': 'Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI',
+        'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 1.jpg',
+        'precoAnterior': '135,28',
+        'preco': '89,99',
+        'pix': '105,87',
+        'maxVezes': '4',
+        'maxVezesPreco': '26,46',
+        'qtdEstoque': '60'
+    },
+    {
+        'id': 1,
+        'nome': 'Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...',
+        'img': 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg',
+        'precoAnterior': '376,46',
+        'preco': '229,99',
+        'pix': '270,58',
+        'maxVezes': '10',
+        'maxVezesPreco': '27,05',
+        'qtdEstoque': '20'
+    },
+    {
+        'id': 2,
+        'nome': 'Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI',
+        'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 1.jpg',
+        'precoAnterior': '135,28',
+        'preco': '89,99',
+        'pix': '105,87',
+        'maxVezes': '4',
+        'maxVezesPreco': '26,46',
+        'qtdEstoque': '60'
+    },
+    {
+        'id': 1,
+        'nome': 'Teclado Mecânico Gamer HyperX Alloy MKW100, RGB...',
+        'img': 'img/produtos/teclados/Teclado Mecânico Gamer HyperX Alloy MKW100, RGB, Switch Red, Full Size, US, Preto/img 1.jpg',
+        'precoAnterior': '376,46',
+        'preco': '229,99',
+        'pix': '270,58',
+        'maxVezes': '10',
+        'maxVezesPreco': '27,05',
+        'qtdEstoque': '20'
+    },
+    {
+        'id': 2,
+        'nome': 'Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI',
+        'img': 'img/produtos/mouses/Mouse Gamer Redragon Cobra, RGB, 7 Botões, 10000DPI, Lunar White - M711W/img 1.jpg',
+        'precoAnterior': '135,28',
+        'preco': '89,99',
+        'pix': '105,87',
+        'maxVezes': '4',
+        'maxVezesPreco': '26,46',
+        'qtdEstoque': '60'
     }
 ]
 

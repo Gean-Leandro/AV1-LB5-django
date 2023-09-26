@@ -38,13 +38,12 @@
                 </div>
                 <div class="col-md-2 account">
                     {% if user.is_authenticated %}
-                    <p class="text-light">{{ user.username }}</p>
+                    <p class="text-light text-center pt-3">{{ user.username }}</p>
                     <a class="icon-account" href="#">
                         <i class="fa-solid fa-circle-user fa-2xl"></i>
                     </a>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -56,13 +55,13 @@
                     {% else %}
                     <h6 class="text-light">Olá, faça seu login<br>ou cadastre-se</h6>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{% url 'clientes:login' %}">Entrar</a></li>
-                            <li><a class="dropdown-item" href="{% url 'clientes:cadastrar_usuario' %}">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'clientes:cadastrar_usuario' %}">Cadastrar</a>
+                            </li>
                         </ul>
                     </li>
                     {% endif %}
@@ -143,4 +142,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 {% block script %}
 {% endblock %}
+
 </html>
