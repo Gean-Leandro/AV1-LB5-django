@@ -7,3 +7,4 @@ class Image(models.Model):
 
     def __str__(self):
         return f'Id produto: {self.product.pk} | Url da imagem: {self.image}'
+    

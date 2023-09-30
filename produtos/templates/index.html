@@ -8,6 +8,11 @@
 {% block content %}
 <section>
     <div class="container-flex">
+        {% for message in messages %}
+        <div class="mx-4 my-2 alert alert-{{message.tags}}" role="alert">
+            {{message}}
+        </div>
+        {% endfor %}
         <div class="row">
             <h1 class="text-center">OFERTAS DO DIA</h1>
         </div>
@@ -194,21 +199,19 @@
             <div class="col-md-8">
                 <div class="produtos mb-5">
                     <div class="row px-4 pb-4">
-                        {% for produto in produtos %}  
+                        {% for produto in produtos %}
                         <div class="col-md-3 mt-4 produto">
                             <div class="mx-2 px-4 pb-2 mt-3 produtos-img-descricao">
                                 <a href="{% url 'produtos:produto_detail' produto.id %}" class="btn-comprar">
                                     <div class="comprar py-1 text-center">
-                                        R$ {{ produto.preco }} | <i class="fa-solid fa-cart-shopping"></i>
+                                        R$ {{ produto.price }} | <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
 
                                     <div class="row">
-                                        <img class="w-90"
-                                            src="/static/{{ produto.img }}"
-                                            alt="">
+                                        <img class="w-90" src="{{ produto.img.url }}" alt="">
                                     </div>
                                     <div class="row px-2 text-center descricao">
-                                        {{ produto.nome }}
+                                        {{ produto.name }}
                                     </div>
                                 </a>
                             </div>

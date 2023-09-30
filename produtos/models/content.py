@@ -6,5 +6,5 @@ class Content(models.Model):
     content = models.TextField()
 
     def __str__(self):
-        return f'Id Produto: {self.product.pk} | Conteudo: {self.content}'
+        return self.content
     

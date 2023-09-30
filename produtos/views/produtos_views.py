@@ -1,4 +1,9 @@
 from django.shortcuts import render
+from produtos.models.product import Product
+from produtos.models.image import Image
+from produtos.models.specifications import Specification
+from produtos.models.rate import Rate
+from produtos.models.content import Content
 
 produtos = [
     {
@@ -294,64 +299,21 @@ avaliacoes = [
 
 def listar_produtos(request):
     context = {
-        'produtos': produtos
+        'produtos': Product.objects.all()
     }
     return render(request, 'index.html', context)
 
 def detalhar_produto(request, id):
-    for p in produtos:
-        if p['id'] == id:
-            produto = p
-            break
-
-    imgs = []
-    for i in imagens:
-        if i['idProduto'] == id:
-            imgs.append(i['img'])
-
-    caracteristica = []
-    for c in caracteristicas:
-        if c['idProduto'] == id:
-            caracteristica.append(c)
-
-    especificacao = []
-    for c in especificacoes:
-        if c['idProduto'] == id:
-            especificacao.append(c)
-
-    conteudo = []
-    for c in conteudos:
-        if c['idProduto'] == id:
-            conteudo.append(c)
-
-    garantia = []
-    for c in garantias:
-        if c['idProduto'] == id:
-            garantia.append(c)
-            break
-            
-    peso = []
-    for c in pesos:
-        if c['idProduto'] == id:
-            peso.append(c)
-
-
-    av = []
-    for a in avaliacoes:
-        if a['idProduto'] == id:
-            av.append(a)
-
+    produto = Product.objects.get(pk=id)
+    imagens = Image.objects.filter(product__pk=id)
+    avaliacoes = Rate.objects.filter(product__pk=id)
 
     context = {
         'produto': produto,
-        'imgs': imgs,
-        'imgInicial': imgs[0],
-        'caracteristicas': caracteristica,
-        'especificacoes': especificacao,
-        'conteudos': conteudo,
-        'garantia': garantia,
-        'peso': peso,
-        'avaliacoes': av
+        'imgs': imagens,
+        'especificacoes': Specification.objects.filter(product__pk=id),
+        'conteudos': Content.objects.filter(product__pk=id),
+        'avaliacoes': avaliacoes
     }
 
     return render(request, 'detalhar_produto.html', context)

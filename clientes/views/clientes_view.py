@@ -39,7 +39,7 @@ def loginUsuario(request):
             messages.warning(request, 'E-mail ou senha incorretos')
 
     
-    return render(request, 'login.html', context)
+    return render(request, 'login.html')
 
 def logoutUsuario(request):
     logout(request)
