@@ -1,4 +1,11 @@
 /* SECTION PRODUTOS */
+.container-flex {
+    min-height: 100vh;
+}
+
+.produtos {
+    min-height: 100vh;
+}
 
 .produtos, .filtro {
     background: rgb(51, 36, 95, 1);

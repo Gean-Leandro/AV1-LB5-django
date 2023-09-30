@@ -4,6 +4,8 @@ from produtos.models.image import Image
 from produtos.models.specifications import Specification
 from produtos.models.rate import Rate
 from produtos.models.content import Content
+from produtos.models.mark import Mark
+from django.contrib import messages
 
 produtos = [
     {
@@ -298,8 +300,38 @@ avaliacoes = [
 ]
 
 def listar_produtos(request):
+    produtos = Product.objects.all()
+    marcas = Mark.objects.all()
+    getMarcasName = []
+    if request.method == 'POST':
+        for marca in marcas:
+            
+            getMarcasName.append({
+                'nome': marca.name,
+                'selecionado': request.POST.get(marca.name)
+            })
+    
+    if len(getMarcasName) != 0:
+        produtos = []
+        selecionados = 0
+        for i in range(len(getMarcasName)):
+            if getMarcasName[i]['selecionado'] == 'on':
+                produtosFiltrados = Product.objects.filter(mark__name=getMarcasName[i]['nome'])
+
+                for produto in produtosFiltrados:
+                    produtos.append(produto)
+            else:
+                selecionados += 1
+        
+        if selecionados == len(getMarcasName):
+            produtos = Product.objects.all()
+    
+    if len(produtos) == 0:
+        messages.warning(request, "Não existem produtos com esse filtro")
+
     context = {
-        'produtos': Product.objects.all()
+        'produtos': produtos,
+        'marcas': marcas
     }
     return render(request, 'index.html', context)
 

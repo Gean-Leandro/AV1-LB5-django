@@ -6,7 +6,7 @@ import decimal
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    img = models.ImageField(upload_to='produtos/principal/')
+    img = models.ImageField(upload_to='produtos/principal/', unique=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField(default=1)
     creditCard = models.IntegerField()
