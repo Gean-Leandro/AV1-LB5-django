@@ -1,115 +1,120 @@
 /* SECTION PRODUTOS */
 .container-flex {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .produtos {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
-.produtos, .filtro {
-    background: rgb(51, 36, 95, 1);
-    border-radius: 12px;
+.produtos,
+.filtro {
+  background: rgb(51, 36, 95, 1);
+  border-radius: 12px;
 }
-
 
 /* DIV PRODUTO */
 
 .produtos-img-descricao {
-    border-radius: 18px;
-    background: #fff;
-    font-size: small;
+  border-radius: 18px;
+  background: #fff;
+  font-size: small;
 }
 
-.produtos-img-descricao:hover{
-    filter: brightness(85%);
+.produtos-img-descricao:hover {
+  filter: brightness(85%);
 }
 
 .descricao {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .descricao:hover {
-    color: #FF8F0C;
+  color: #ff8f0c;
 }
-
 
 .comprar {
-    transform: translateY(-50%);
-    margin: 0 -5%;
-    color: #fff;
-    background: #FF8F0C;
-    border-radius: 4px;
-    font-size: large;
+  transform: translateY(-50%);
+  margin: 0 -5%;
+  color: #fff;
+  background: #ff8f0c;
+  border-radius: 4px;
+  font-size: large;
 }
-
-
 
 .btn-comprar {
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 }
 /* DIV PRODUTO */
-
-
-
 
 /* SECTION PRODUTOS */
 
 /* Filtro */
 
 .filtro {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-.item-acordeao button{
-    border-radius: 12px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background: transparent;
-    border: none;
-    color: #fff;
-    width: 100%;
+.item-acordeao button {
+  border-radius: 12px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  width: 100%;
 }
 
 .item-acordeao button:hover {
-    background: rgb(62, 44, 118);
+  background: rgb(62, 44, 118);
 }
 
 .item-acordeao button div {
-    width: 90%;
+  width: 90%;
 }
 
 .item-acordeao button i {
-    width: 10%;
+  width: 10%;
 }
 
 /* SUB ITEM-FILTRO */
 
 .list-checkbox {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .list-checkbox li {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .list-checkbox-texto {
-    width: 90%;
+  width: 90%;
 }
 
 .list-checkbox-input {
-    width: 10%;
+  width: 10%;
 }
 
 .list-checkbox-input input {
-    border: none;
-    color: red;
+  border: none;
+  color: red;
 }
 /* SUB ITEM-FILTRO */
 
+.btn-filtrar {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+}
+
+.btn-filtrar:hover {
+  background: #9130fa8a;
+}
 /* Filtro */
